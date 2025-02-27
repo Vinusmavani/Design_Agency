@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body class="text-primary bg-secondary-100 font-body">
+    <div>
+        <!-- nav bar start -->
+        <nav class="w-full p-8 px-10 fixed z-[100] bg-secondary-100">
+          <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+              <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
+                <!-- Mobile menu button-->
+                <button id="mobile-menu-toggle" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <svg class="hidden size-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex flex-1 items-center justify-center md:items-stretch md:justify-between">
+                <div class="flex shrink-0 items-center">
+                  <a class="font-medium text-2xl">Acme Creatives</a>
+                </div>
+                <div class="hidden md:ml-6 md:block justify-center">
+                  <div class="flex space-x-4 items-center">
+                    <a href="#services" class="rounded-md px-3 py-2 text-lg font-medium">Services</a>
+                    <a href="#Portfolio" class="rounded-md px-3 py-2 text-lg font-medium">Portfolio</a>
+                    <a href="#Testimonials" class="rounded-md px-3 py-2 text-lg font-medium">Testimonials</a>
+                    <a href="#Contact" class="my-2 mx-2 py-2 px-4 text-primary border-2 font-medium border-primary rounded-lg hover:bg-tertiary">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Mobile menu -->
+          <div class="hidden md:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <a href="#services" class="block rounded-md px-3 py-2 text-lg font-medium hover:bg-tertiary hover:text-primary">Services</a>
+              <a href="#Portfolio" class="block rounded-md px-3 py-2 text-lg font-medium hover:bg-tertiary hover:text-primary">Portfolio</a>
+              <a href="#Testimonials" class="block rounded-md px-3 py-2 text-lg font-medium hover:bg-tertiary hover:text-primary">Testimonials</a>
+              <a href="#Contact" class="block rounded-md px-3 py-2 text-lg font-medium hover:bg-tertiary hover:text-primary">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- nav bar end -->
+
+        <main class="flex flex-col justify-center">
+          <!--  banners goes here -->
+          <div class="h-auto w-full mt-[200px] md:mb-[200px] lg:mb-[-240px] flex flex-col justify-center">
+
+            <div class="flex justify-center w-auto">
+              <p class="text-6xl w-3/4 font-medium font-align text-center leading-tight">
+                Our Mission Is To Make Your
+                <span class="bg-tertiary px-3 rounded-lg">Business</span> Stand-out
+                In Front Of Crowd</p>
+            </div>
+            <div class="flex justify-center">
+              <button class="my-3 mx-3 py-3 px-5 text-primary border-2 font-medium border-primary rounded-full hover:bg-tertiary">Let's Discuss</button>
+            </div>
+
+          </div>
+
+          <canvas class="hidden sm:block" id="canvas"></canvas>
+          <!-- canvas banners end here -->
+
+          <!-- clients goes here -->
+          <div class="flex w-full py-2 flex-wrap bg-secondary-200 px-[100px] justify-center ">
+              <div class="w-[200px] flex items-center p-10">
+                  <img src="https://static.vecteezy.com/system/resources/previews/012/871/378/non_2x/hitachi-brand-icon-illustration-top-tech-company-logotype-free-png.png" alt="">
+              </div>
+              <div class="w-[200px] flex items-center p-10">
+                <img src="https://static.vecteezy.com/system/resources/previews/012/871/384/non_2x/sony-brand-icon-illustration-top-tech-company-logotype-free-png.png" alt="">
+              </div>
+              <div class="w-[160px] flex items-center p-10">
+                <img src="https://logos-world.net/wp-content/uploads/2023/09/Logo-IBM.png" alt="">
+              </div>
+              <div class="w-[300px] flex items-center p-10">
+                <img src="https://lever-client-logos.s3.amazonaws.com/ed484927-3d92-400a-90c5-ef042d3a340c-1558398311086.png" alt="">
+              </div>
+              <div class="w-[200px] flex items-center p-10">
+                <img src="https://seeklogo.com/images/F/freddie-mac-logo-05A0E70A0E-seeklogo.com.png" alt="">
+              </div>
+          </div>
+
+          <!-- clients end here -->
+
+
+          <!-- services of Agency goes here -->
+          <div id="services" class="h-auto w-100 flex flex-wrap flex-col items-center p-10 mt-10">
+            
+            <div class="w-full h-auto flex flex-wrap flex-col items-center">
+              <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">Our Services</p>
+            </div>
+
+            <div class="w-full flex flex-wrap justify-center mt-10">
+
+              <div class="flex-col flex-wrap sm:mt-8">
+                
+                <div class="p-10 mt-4 mx-2 bg-primary rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-tertiary flex justify-center items-center">
+                    <img class="h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/8448/8448908.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-secondary-100">
+                    Website UX Design
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-secondary-200 leading-normal">
+                    Our designers work closely with our developers to craft beautiful, custom websites that elevate your brand.
+                  </div>
+                </div>
+
+                <div class="p-10 mt-4 mx-2 bg-secondary-200 rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-primary flex justify-center items-center">
+                    <img class="h-10 w-10" src="https://www.albcreative.com/wp-content/uploads/2016/11/web-design-graphic-design-icon-white.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-primary">
+                    Logos and Brand Guides
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-primary leading-normal">
+                    A logo is an important symbol that helps with brand recognition. It needs to be unique and memorable.
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="flex-col flex-wrap mt-4 sm:mt-16">
+                
+                <div class="p-10 md:mt-4 mx-2 bg-tertiary rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-primary flex justify-center items-center">
+                    <img class="h-10 w-10" src="./img/icons8-growth-100.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-primary">
+                    Brand Messaging + Values
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-primary leading-normal">
+                    Unique stories and the way you speak to your audience matter. We help companies define their values.
+                  </div>
+                </div>
+
+                <div class="p-10 mt-4 mx-2 bg-secondary-100 border-2 border-secondary-200 rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-secondary-200 flex justify-center items-center">
+                    <img class="h-10 w-10" src="./img/icons8-reposition-100.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-primary">
+                    Repositioning
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-primary leading-normal">
+                    After a company restructure or buyout, it’s often valuable to reposition yourself in the market to attract and retain new business.
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="flex-col flex-wrap sm:mt-8">
+                
+                <div class="p-10 mt-4 mx-2 bg-primary rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-tertiary flex justify-center items-center">
+                    <img class="h-10 w-10" src="./img/icons8-brilliant-idea-100.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-secondary-100">
+                    Brand Unification
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-secondary-200 leading-normal">
+                    Today’s market moves fast, and many companies are finding themselves in the position of acquiring new divisions or operating new companies.
+                  </div>
+                </div>
+
+                <div class="p-10 mt-4 mx-2 bg-secondary-200 rounded-xl max-w-sm flex-col">
+                  <div class="h-16 w-16 mb-2 rounded-full bg-primary flex justify-center items-center">
+                    <img class="h-10 w-10" src="./img/icons8-ai-chatting-100.png" alt="">
+                  </div>
+                  <div class="text-2xl font-medium text-primary">
+                    AI-Assisted content
+                  </div>
+                  <div class="mt-2 text-sm font-normal text-primary leading-normal">
+                    To enhance our work, we utilize AI to tap into trends and research, but then use our own in-house team to strategically craft a brand story.
+                  </div>
+                </div>
+                
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Portfolio goes here -->
+          <div id="Portfolio">
+            <div class="bg-secondary-200 py-24 sm:py-32">
+              <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+                <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-primary sm:text-5xl">Glimpse of what we've do</p>
+                <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+                  <div class="relative lg:row-span-2">
+                    <div class="absolute inset-px rounded-lg bg-secondary-100 lg:rounded-l-[2rem]"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                      <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                        <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Custom app design</p>
+                        <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Today’s market moves fast, and many companies are finding themselves in the position of acquiring new divisions or operating new companies.</p>
+                      </div>
+                      <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                        <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                          <img class="size-full object-cover object-top" src="./img/x.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
+                  </div>
+                  <div class="relative max-lg:row-start-1">
+                    <div class="absolute inset-px rounded-lg bg-secondary-100 max-lg:rounded-t-[2rem]"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                      <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                        <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Brandbox</p>
+                        <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">For businesses who need a strategic plan and an ongoing marketing partner, we offer Brandbox</p>
+                      </div>
+                      <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                        <img class="w-full max-lg:max-w-xs" src="./img/logo_d.png" alt="">
+                      </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
+                  </div>
+                  <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+                    <div class="absolute inset-px rounded-lg bg-secondary-100"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                      <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+                        <img class="h-auto object-cover" src="./img/sc.png" alt="">
+                      </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
+                  </div>
+                  <div class="relative lg:row-span-2">
+                    <div class="absolute inset-px rounded-lg bg-secondary-100 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                      <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                        <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Web Development</p>
+                        <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">When it comes to staying relevant in a market where recognition is key to making an impression.</p>
+                      </div>
+                      <div class="relative min-h-[30rem] w-full grow">
+                        <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                          <div class="flex">
+                            <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
+                              <img src="./img/recipely main.png" alt="">
+                            </div>
+                          </div>
+                          <div class="px-6 pb-14 pt-6">
+                            <!-- Your code example -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- Portfolio end here  -->
+
+          <!-- Testimonials goes here -->
+          <div id="Testimonials" class=" w-full py-24 sm:py-32 px-10">
+            
+            <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold text-primary sm:text-5xl">
+              Testimonials
+            </p>
+            
+            <div class="flex flex-wrap py-10 items-center justify-center sm:justify-evenly">
+            
+                <div class="flex-col w-[400px] bg-primary p-10 mt-16 rounded-xl">
+
+                  <div class="flex">
+                    <div class="pr-3">
+                      <img class="h-16 w-16 object-cover rounded-full" src="https://img.freepik.com/free-photo/3d-rendering-zoom-call-avatar_23-2149556785.jpg?t=st=1733260652~exp=1733264252~hmac=61602abdd0789707bec562722cedef82f473cc7b0f9de9a0cda8a3a5bba41224&w=1380" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <p class="font-normal text-secondary-100 text-2xl">David M.</p>
+                      <p class="font-light text-secondary-200 text-xs">Marketing Director at UrbanGear</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="font-normal text-secondary-200 text-1xl">"The team at acme creatives is nothing short of amazing. They took the time to understand our unique needs and created a user experience that’s not only visually stunning but also incredibly functional. Highly recommend their expertise!"</p>
+                  </div>
+
+                </div>
+
+                <div class="flex-col w-[400px] bg-tertiary p-10 mt-16 rounded-xl">
+
+                  <div class="flex">
+                    <div class="pr-3">
+                      <img class="h-16 w-16 object-cover rounded-full" src="https://img.freepik.com/free-photo/3d-rendering-zoom-call-avatar_23-2149556784.jpg?t=st=1733272640~exp=1733276240~hmac=d106f7d517a9aebee944fe51312fb028fe37eb60ca2d79f99971dab8ecacf3ec&w=1380" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <p class="font-normal text-2xl">Emily R.</p>
+                      <p class="font-light text-gray-500 text-xs">Founder of Bloom Boutique</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="font-normal text-gray-800 text-1xl">"We needed a complete brand overhaul, and Acme creatives delivered perfection. From logo design to web presence, their attention to detail and creativity were unparalleled. We’ve seen a measurable increase in engagement since launch!"</p>
+                  </div>
+
+                </div>
+
+                <div class="flex-col w-[400px] bg-secondary-200 p-10 mt-16 rounded-xl">
+
+                  <div class="flex">
+                    <div class="pr-3">
+                      <img class="h-16 w-16 object-cover rounded-full" src="https://img.freepik.com/free-photo/3d-rendering-zoom-call-avatar_23-2149556787.jpg?t=st=1733272998~exp=1733276598~hmac=a3a36f66b92a1de1ff3e87a8c4b73d2af83543de575a2181878c94f80c5b206a&w=1380" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <p class="font-normal text-2xl">Sarah L.</p>
+                      <p class="font-light text-gray-500 text-xs">CEO of GreenTech Solutions</p>
+                    </div>
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="font-normal text-gray-800 text-1xl">"Working with acme creatives was an absolute game-changer for our brand. Their design team brought our vision to life with a sleek, modern website that our customers can’t stop raving about. The process was seamless, and they delivered beyond our expectations!"</p>
+                  </div>
+
+                </div>
+
+            </div>
+
+          </div>
+
+        </main>
+
+        <!-- contact Us footer -->
+        <div id="Contact">
+          <div class="isolate bg-secondary-200 px-6 py-24 sm:pb-32 lg:px-8">
+            
+            <div class="mx-auto max-w-2xl text-center">
+              <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact Us</h2>
+              <p class="mt-2 text-lg/8 text-gray-600">Meet us for a coffee. Or wine. We won’t judge.</p>
+            </div>
+            <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+              <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                  <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
+                  <div class="mt-2.5">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                  </div>
+                </div>
+                <div>
+                  <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
+                  <div class="mt-2.5">
+                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="company" class="block text-sm/6 font-semibold text-gray-900">Company</label>
+                  <div class="mt-2.5">
+                    <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+                  <div class="mt-2.5">
+                    <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="phone-number" class="block text-sm/6 font-semibold text-gray-900">Phone number</label>
+                  <div class="mt-2.5">
+                    <div class="flex rounded-md bg-white outline outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                      <div class="grid shrink-0 grid-cols-1 focus-within:relative">
+                        <select id="country" name="country" autocomplete="country" aria-label="Country" class="col-start-1 row-start-1 w-full appearance-none rounded-md py-2 pl-3.5 pr-7 text-base text-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                          <option>US</option>
+                          <option>CA</option>
+                          <option>EU</option>
+                        </select>
+                        <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                          <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <input type="text" name="phone-number" id="phone-number" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6" placeholder="123-456-7890">
+                    </div>
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+                  <div class="mt-2.5">
+                    <textarea name="message" id="message" rows="4" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-10">
+                <button type="submit" class="block w-full rounded-md bg-tertiary px-3.5 py-2.5 text-center text-sm font-semibold text-primary shadow-sm hover:bg-primary hover:text-tertiary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Let's talk</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+    </div>    
+    
+    
+    <script src="./navbar.js"></script>
+    <script src="./canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</body>
+</html>
